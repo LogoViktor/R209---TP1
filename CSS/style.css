@@ -4,16 +4,85 @@ body {
     margin: 0;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.contact-form-container {
-    background-color: #333333;
+h1 {
     color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form-container {
+    background-color: white;
+    color: #333;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
     max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: #064282;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: center;
+    width: auto;
+}
+
+.submit-button:hover {
+    background-color: #064282;
 }
