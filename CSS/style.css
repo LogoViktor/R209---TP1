@@ -54,7 +54,7 @@ h1 {
 .radio-group {
     display: flex;
     align-items: center;
-}
+} 
 
 .radio-group input {
     width: auto;
