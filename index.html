@@ -1,10 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+    <div class="contact-form-container">
+        <h2>Formulaire de contact</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="pseudo">Votre Pseudo *</label>
+                <input type="text" id="pseudo" placeholder="Votre pseudo">
+            </div>
+            <div class="form-group">
+                <label for="password">Votre Mot de passe *</label>
+                <input type="password" id="password" placeholder="Votre mot de passe">
+            </div>
+            <div class="form-group">
+                <label for="email">Votre e-mail *</label>
+                <input type="email" id="email" placeholder="Votre adresse e-mail">
+            </div>
+            <div class="form-group">
+                <label for="subject">Objet du message *</label>
+                <select id="subject">
+                    <option value="question" selected>J'ai une question</option>
+                    <option value="suggestion">Je fais une suggestion</option>
+                    <option value="problem">Je rencontre un problème</option>
+                    <option value="other">Autre</option>
+                </select>
+            </div>            
+            <div class="form-group">
+                <label for="message">Votre message *</label>
+                <textarea id="message" placeholder="Votre message"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Niveau d'urgence *</label>
+                <div class="radio-group">
+                    <input type="radio" id="urgent" name="urgence" value="urgent">
+                    <label for="urgent">Urgent</label>
+                    <input type="radio" id="normal" name="urgence" value="normal">
+                    <label for="normal">Normal</label>
+                    <input type="radio" id="lent" name="urgence" value="lent" checked>
+                    <label for="lent">Lent</label>
+                </div>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="confidentiality">
+                <label for="confidentiality">J'ai lu et j'accepte la politique de confidentialité du site.</label>
+            </div>
+            <button type="submit" class="submit-button">Envoyer</button>
+        </form>
+    </div>
 </body>
 </html>
