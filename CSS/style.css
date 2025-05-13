@@ -18,7 +18,7 @@ h1 {
 
 .contact-form-container {
     background-color: white;
-    color: #333;
+    color: #333333;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
@@ -50,6 +50,19 @@ h1 {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
+fieldset {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+legend {
+    padding: 0 5px;
+    font-weight: bold; /* Assure que le texte est en gras */
+}
+
 
 .radio-group {
     display: flex;
